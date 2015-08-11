@@ -13,7 +13,7 @@ config/
 gradlew
 gradlew.bat
 server.properties
-*.txt
+options.txt
 *.json
 *.bat
 gradle/
