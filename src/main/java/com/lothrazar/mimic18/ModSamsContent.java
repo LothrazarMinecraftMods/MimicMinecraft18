@@ -3,7 +3,9 @@ package com.lothrazar.mimic18;
 import java.util.ArrayList;
 
 import org.apache.logging.log4j.Logger;  
+
 import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -48,7 +50,13 @@ public class ModSamsContent
 	public static Configuration config;
 	public static ConfigFile settings;
 	
-	
+	public static CreativeTabs tabMimic = new CreativeTabs("tabMimic") 
+	{
+		@Override
+		public Item getTabIconItem() {
+			return MimicRegistry.prismarine_crystals;
+		}
+	};
 	//TODO: try asm out http://www.minecraftforum.net/forums/mapping-and-modding/mapping-and-modding-tutorials/1571568-tutorial-1-6-2-changing-vanilla-without-editing
 
 	@EventHandler
@@ -154,13 +162,14 @@ public class ModSamsContent
 
 	 public static void registerBlockHelper(Block s, String name)
 	 {
-		 s.setBlockName(name).setBlockTextureName(TEXTURE_LOCATION + name);
+		 s.setBlockName(name).setBlockTextureName(TEXTURE_LOCATION + name).setCreativeTab(tabMimic);
 		 GameRegistry.registerBlock(s, name);
+		 
 		 
 	 }
 	 public static void registerItemHelper(Item s, String name)
 	 {
-		 s.setUnlocalizedName(name).setTextureName(TEXTURE_LOCATION + name);
+		 s.setUnlocalizedName(name).setTextureName(TEXTURE_LOCATION + name).setCreativeTab(tabMimic);
 		 GameRegistry.registerItem(s, name);
 	 }
 	 
