@@ -160,24 +160,19 @@ public class ModSamsContent
 		}
 	}
 
-	 public static void registerBlockHelper(Block s, String name)
+	 public static void registerBlockHelperNoTab(Block s, String name)
 	 {
 		 s.setBlockName(name).setBlockTextureName(TEXTURE_LOCATION + name);
 		 GameRegistry.registerBlock(s, name);
-		 
-		 if(name.contains("tile.door_") == false)
-			 s.setCreativeTab(tabMimic);//hack/cheat to not get broken door items
-		 
-		 
+	 }
+	 public static void registerBlockHelper(Block s, String name)
+	 {
+		 s.setBlockName(name).setBlockTextureName(TEXTURE_LOCATION + name).setCreativeTab(tabMimic);
+		 GameRegistry.registerBlock(s, name);
 	 }
 	 public static void registerItemHelper(Item s, String name)
 	 {
-		 s.setUnlocalizedName(name).setTextureName(TEXTURE_LOCATION + name);
+		 s.setUnlocalizedName(name).setTextureName(TEXTURE_LOCATION + name).setCreativeTab(tabMimic);
 		 GameRegistry.registerItem(s, name);
-		 
-		 if(name.contains("tile.door_") == false)
-			 s.setCreativeTab(tabMimic);//hack/cheat to not get broken door items
-		 
 	 }
-	 
 }

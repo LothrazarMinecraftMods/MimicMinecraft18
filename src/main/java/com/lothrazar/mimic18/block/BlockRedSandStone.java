@@ -11,6 +11,8 @@ import net.minecraft.util.IIcon;
 
 import java.util.List;
 
+import com.lothrazar.mimic18.ModSamsContent;
+
 public class BlockRedSandStone extends BlockSandStone
 { 
     public BlockRedSandStone()
@@ -42,8 +44,8 @@ public class BlockRedSandStone extends BlockSandStone
    
 
         //top bottom same for all of them, regardless of carved,smooth,whatever
-        this.iconTop = p_149651_1_.registerIcon("samspowerups:" + "red_sandstone" + "_top");
-        this.iconBottom = p_149651_1_.registerIcon("samspowerups:" + "red_sandstone" + "_bottom");
+        this.iconTop = p_149651_1_.registerIcon(ModSamsContent.TEXTURE_LOCATION + "red_sandstone" + "_top");
+        this.iconBottom = p_149651_1_.registerIcon(ModSamsContent.TEXTURE_LOCATION+ "red_sandstone" + "_bottom");
     }
     
     @Override

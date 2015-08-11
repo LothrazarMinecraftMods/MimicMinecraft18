@@ -100,7 +100,7 @@ public class MimicRegistry
 		ItemDoorSimple door_acacia_item = new ItemDoorSimple(door_acacia);  
 		door_acacia.setItemDropped(door_acacia_item);
 
-		ModSamsContent.registerBlockHelper(door_acacia, "door_acacia"); 
+		ModSamsContent.registerBlockHelperNoTab(door_acacia, "door_acacia"); 
 		ModSamsContent.registerItemHelper(door_acacia_item, "door_acacia_item") ;
 		
 		GameRegistry.addRecipe(new ItemStack(door_acacia_item,3), " pp", " pp",	" pp", 
@@ -117,7 +117,7 @@ public class MimicRegistry
 
 		door_jungle.setItemDropped(door_jungle_item);
 
-		ModSamsContent.registerBlockHelper(door_jungle, "door_jungle"); 
+		ModSamsContent.registerBlockHelperNoTab(door_jungle, "door_jungle"); 
 		ModSamsContent.registerItemHelper(door_jungle_item, "door_jungle_item") ; 
 		 
 		GameRegistry.addRecipe(new ItemStack(door_jungle_item,3), " pp", " pp",	" pp", 
@@ -134,7 +134,7 @@ public class MimicRegistry
 
 		door_spruce.setItemDropped(door_spruce_item);
 		 
-		ModSamsContent.registerBlockHelper(door_spruce, "door_spruce"); 
+		ModSamsContent.registerBlockHelperNoTab(door_spruce, "door_spruce"); 
 		ModSamsContent.registerItemHelper(door_spruce_item, "door_spruce_item") ;
 		 
 		GameRegistry.addRecipe(new ItemStack(door_spruce_item,3), " pp", " pp",	" pp", 
@@ -152,7 +152,7 @@ public class MimicRegistry
 		door_birch.setItemDropped(door_birch_item);
 		
 
-		ModSamsContent.registerBlockHelper(door_birch, "door_birch"); 
+		ModSamsContent.registerBlockHelperNoTab(door_birch, "door_birch"); 
 		ModSamsContent.registerItemHelper(door_birch_item, "door_birch_item") ;
  
 		 
@@ -170,7 +170,7 @@ public class MimicRegistry
 		
 		door_dark_oak.setItemDropped(door_dark_oak_item);
 
-		ModSamsContent.registerBlockHelper(door_dark_oak, "door_dark_oak"); 
+		ModSamsContent.registerBlockHelperNoTab(door_dark_oak, "door_dark_oak"); 
 		ModSamsContent.registerItemHelper(door_dark_oak_item, "door_dark_oak_item") ;
  
 		GameRegistry.addRecipe(new ItemStack(door_dark_oak_item,3), " pp", " pp",	" pp", 
