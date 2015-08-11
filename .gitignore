@@ -18,7 +18,6 @@ options.txt
 *.bat
 gradle/
 *.properties
-*.gradle
 .gradle/
 screenshots/
 .settings/
