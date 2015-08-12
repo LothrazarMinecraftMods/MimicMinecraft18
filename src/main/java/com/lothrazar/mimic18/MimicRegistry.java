@@ -245,9 +245,15 @@ public class MimicRegistry
 
 		red_sandstone_slab = new BlockRedSandStoneSlab(false);
 		red_sandstone_dbl_slab = new BlockRedSandStoneSlab(true);
+		
 
+		// s.setBlockName(name).setBlockTextureName(TEXTURE_LOCATION + name).setCreativeTab(tabMimic);
+		red_sandstone_dbl_slab.setHardness(0.8F);
+		red_sandstone_slab.setHardness(0.8F).setBlockName("red_sandstone_slab");
+		red_sandstone_slab.setCreativeTab(ModSamsContent.tabMimic);
 		GameRegistry.registerBlock(red_sandstone_slab,
 				ItemSlabRedSandstone.class, "red_sandstone_slab");
+		
 		GameRegistry.registerBlock(red_sandstone_dbl_slab,
 				ItemSlabRedSandstone.class, "red_sandstone_dbl_slab");//TODO: PICK BLOCK DOES TSONE LAB
 
