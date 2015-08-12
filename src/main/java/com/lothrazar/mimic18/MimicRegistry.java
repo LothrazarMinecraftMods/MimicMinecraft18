@@ -2,7 +2,7 @@ package com.lothrazar.mimic18;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
+
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -228,7 +228,7 @@ public class MimicRegistry
 		
 		BlockRedSandStone red_sandstone_carved = new BlockRedSandStone();
 		red_sandstone_carved.setStepSound(Block.soundTypePiston).setHardness(0.8F);
- ;
+ 
 		ModSamsContent.registerBlockHelper(red_sandstone_carved, "red_sandstone_carved"); 
 		
 
@@ -244,8 +244,6 @@ public class MimicRegistry
 				's', new ItemStack(red_sandstone));
 
 		red_sandstone_slab = new BlockRedSandStoneSlab(false);
-		red_sandstone_slab.setBlockName("red_sandstone_slab").setCreativeTab(CreativeTabs.tabBlock);
-
 		red_sandstone_dbl_slab = new BlockRedSandStoneSlab(true);
 
 		GameRegistry.registerBlock(red_sandstone_slab,
@@ -450,12 +448,10 @@ public class MimicRegistry
 	{
 		// http://minecraft.gamepedia.com/Prismarine_Shard
 		// http://minecraft.gamepedia.com/Prismarine_Crystals
-		prismarine_crystals = new Item();
-		prismarine_crystals.setCreativeTab(CreativeTabs.tabDecorations);
+		prismarine_crystals = new Item(); 
 		ModSamsContent.registerItemHelper(prismarine_crystals, "prismarine_crystals");
 
-		prismarine_shard = new Item();
-		prismarine_crystals.setCreativeTab(CreativeTabs.tabDecorations);
+		prismarine_shard = new Item(); 
 		ModSamsContent.registerItemHelper(prismarine_shard, "prismarine_shard");
 
 		BlockSimple prismarine_bricks = new BlockSimple(Material.rock);
